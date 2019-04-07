@@ -51,5 +51,7 @@ class WordsExtractor:
             audio_chunk.export("{}.wav".format(word), format="wav")
 
 if __name__ == '__main__':
-    v2c = WordsExtractor("/home/nadav/Downloads/audio/test.flac")
+    words = ["china", "when", "was", "wall"]
+    v2c = WordsExtractor("/home/nadav/Downloads/audio/trump.flac", words)
+    v2c.exports_words()
     # v2c.load_from_file("/home/nadav/Downloads/audio/test.flac", "en-US")
